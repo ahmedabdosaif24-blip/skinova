@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-skinova-ivory text-skinova-charcoal;
+  }
+
+  /* Custom selection color */
+  ::selection {
+    @apply bg-skinova-gold/30 text-skinova-forest;
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_8px_32px_0_rgba(24,61,50,0.1)];
+  }
+}
